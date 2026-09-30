@@ -1,0 +1,815 @@
+/* Código do banner e do header */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   CORES
+========================= */
+
+:root {
+    --creme: #fffdea;
+    --verde: #53651f;
+    --laranja: #ff8145;
+    --marrom: #813c27;
+    --preto: #151515;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 125px;
+
+    background: var(--creme);
+
+    border-top: 10px solid var(--preto);
+    border-bottom: 12px solid var(--preto);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* MENUS */
+
+.menu {
+    display: flex;
+    gap: 22px;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.menu-left {
+    left: 6.5%;
+}
+
+.menu-right {
+    right: 6.5%;
+}
+
+.menu a {
+    color: var(--marrom);
+
+    font-size: 13px;
+    font-weight: 400;
+
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+
+    color: var(--marrom);
+
+    line-height: 0.8;
+}
+
+.logo span {
+    display: block;
+
+    color: var(--laranja);
+
+    font-family: cursive;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.logo strong {
+    display: block;
+
+    font-size: 22px;
+    font-weight: 400;
+}
+.logo{
+    height: 300px;
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+main {
+    width: 100%;
+
+    padding: 30px 20px;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    width: 575px;
+    height: 320px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    overflow: hidden;
+
+}
+
+
+/* LADO ESQUERDO */
+
+.banner-left {
+    width: 50%;
+
+    background: var(--verde);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ÍCONE */
+
+.icone {
+    color: var(--creme);
+
+    font-size: 70px;
+
+    transform: rotate(45deg);
+
+    margin-bottom: 25px;
+}
+
+
+/* LOGO DO BANNER */
+
+.banner-logo {
+    color: var(--creme);
+
+    text-align: center;
+
+    line-height: 0.9;
+}
+
+.banner-logo span {
+    display: block;
+
+    font-family: cursive;
+    font-style: italic;
+
+    font-size: 17px;
+}
+
+.banner-logo strong {
+    display: block;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+/* =========================
+   LADO DIREITO
+========================= */
+
+.banner-right {
+    width: 50%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--creme);
+}
+
+.banner-right img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* TEXTO DO BANNER */
+
+.banner-right p {
+    position: absolute;
+
+    bottom: 8px;
+    left: 45px;
+
+    color: var(--verde);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   PEDIDO
+========================= */
+
+.pedido {
+    width: 520px;
+    height: 76px;
+
+    margin: 38px auto 0;
+
+    display: flex;
+
+    background: var(--creme);
+}
+
+
+/* CARDÁPIO */
+
+.cardapio {
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #333;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+.cardapio span,
+.cardapio strong {
+    display: block;
+}
+
+.cardapio strong {
+    font-weight: bold;
+}
+
+.livro {
+    font-size: 28px;
+}
+
+
+/* =========================
+   INFORMAÇÕES DO PEDIDO
+========================= */
+
+.pedido-info {
+    width: 65%;
+
+    padding: 10px 20px;
+
+    background: var(--laranja);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pedido-info > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.pedido-info strong {
+    font-size: 17px;
+}
+
+.pedido-info small {
+    font-size: 9px;
+
+    line-height: 1.3;
+}
+
+.telefone {
+    white-space: nowrap;
+
+    font-size: 13px;
+}
+
+.telefone strong {
+    font-size: 15px;
+}
+
+
+/* Fim do banner e header */
+
+/* =========================
+   SOBRE A MARMITARIA
+========================= */
+
+.sobre {
+    width: 100%;
+
+    background: #fffdea;
+
+    padding-top: 60px;
+
+    overflow: hidden;
+}
+
+
+/* CONTEÚDO */
+
+.sobre-conteudo {
+    width: 700px;
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.sobre h2 {
+    margin-bottom: 35px;
+
+    color: #454545;
+
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sobre h2 span {
+    color: #ff8145;
+
+    font-weight: 700;
+}
+
+
+/* TEXTOS */
+
+.sobre p {
+    margin-bottom: 25px;
+
+    color: #111;
+
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.sobre-imagem {
+    width: 100%;
+    height: 300px;
+
+    position: relative;
+
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* FAIXA LARANJA */
+
+.faixa-laranja {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 75px;
+
+    height: 225px;
+
+    background: #ff8145;
+
+    z-index: 1;
+}
+
+
+/* MARMITA */
+
+.sobre-imagem img {
+    position: relative;
+
+    z-index: 2;
+
+    width: 750px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 600px) {
+
+    .sobre {
+        padding-top: 45px;
+    }
+
+    .sobre h2 {
+        font-size: 24px;
+
+        margin-bottom: 28px;
+    }
+
+    .sobre p {
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        margin-bottom: 22px;
+    }
+
+    .sobre-imagem {
+        height: 250px;
+
+        margin-top: 30px;
+    }
+
+    .faixa-laranja {
+        top: 65px;
+
+        height: 185px;
+    }
+
+    .sobre-imagem img {
+        width: 290px;
+    }
+}
+/* =====================================================
+   CONTINUAÇÃO - SEÇÃO DAS 3 MARMITAS
+   ===================================================== */
+
+   .marmitas-section {
+    width: 100%;
+    height: 430px;
+
+    background-color: #ff8148;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Área que contém as três marmitas */
+
+.marmitas-container {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   CONFIGURAÇÃO GERAL DAS IMAGENS
+   ===================================================== */
+
+.marmita {
+    position: absolute;
+}
+
+.marmita img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =====================================================
+   MARMITA PRINCIPAL - CENTRO
+   ===================================================== */
+
+.marmita-principal {
+    width: 330px;
+    height: 270px;
+
+    position: absolute;
+
+    top: -5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+}
+
+
+/* =====================================================
+   MARMITA DA ESQUERDA
+   ===================================================== */
+
+.marmita-esquerda {
+    width: 175px;
+    height: 155px;
+
+    position: absolute;
+
+    left: calc(50% - 360px);
+    bottom: 10px;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   MARMITA DA DIREITA
+   ===================================================== */
+
+.marmita-direita {
+    width: 175px;
+    height: 155px;
+
+    position: absolute;
+
+    left: calc(50% + 185px);
+    bottom: 10px;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - TABLET
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .marmitas-section {
+        height: 380px;
+    }
+
+    .marmita-principal {
+        width: 290px;
+        height: 235px;
+
+        top: 0;
+    }
+
+    .marmita-esquerda {
+        width: 145px;
+        height: 130px;
+
+        left: calc(50% - 290px);
+        bottom: 15px;
+    }
+
+    .marmita-direita {
+        width: 145px;
+        height: 130px;
+
+        left: calc(50% + 145px);
+        bottom: 15px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - CELULAR
+   ===================================================== */
+
+@media (max-width: 550px) {
+
+    .marmitas-section {
+        height: 340px;
+    }
+
+    .marmita-principal {
+        width: 430px;
+        height: 350px;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+    
+    .marmita-esquerda {
+        width: 220px;
+        height: 195px;
+        left: calc(50% - 390px);
+        bottom: 0;
+        z-index: 2;
+    }
+    
+    .marmita-direita {
+        width: 220px;
+        height: 195px;
+        left: calc(50% + 170px);
+        bottom: 0;
+        z-index: 2;
+    }
+}
+    
+    
+
+
+
+/* ==========================================
+   RESPONSIVO
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .marmitas-section {
+        height: 350px;
+    }
+
+    .marmitas-imagem {
+        width: 100%;
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .marmitas-section {
+        height: 280px;
+    }
+
+    .marmitas-imagem {
+        width: 120%;
+        max-width: none;
+        margin-left: -10%;
+    }
+
+}
+
+
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        padding: 20px;
+    }
+
+    .menu {
+        position: static;
+
+        transform: none;
+
+        gap: 12px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .menu-left {
+        order: 1;
+    }
+
+    .menu-right {
+        order: 3;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 575px;
+    }
+
+    .pedido {
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .menu {
+        position: static;
+
+        transform: none;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .menu-left,
+    .menu-right {
+        order: initial;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .banner {
+        height: 400px;
+
+        flex-direction: column;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+
+    .banner-left {
+        height: 45%;
+    }
+
+    .banner-right {
+        height: 55%;
+    }
+
+    .pedido {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+    .cardapio,
+    .pedido-info {
+        width: 100%;
+    }
+
+    .cardapio {
+        height: 65px;
+    }
+
+    .pedido-info {
+        min-height: 80px;
+    }
+}
