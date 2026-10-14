@@ -49,6 +49,12 @@ body {
     position: relative;
 }
 
+.logo-img { 
+    width: 30%;
+    position: relative;
+    bottom: 20px;
+}
+
 
 /* MENUS */
 
@@ -111,7 +117,7 @@ body {
     font-weight: 400;
 }
 .logo{
-    height: 300px;
+    height: 50px;
 }
 
 
@@ -442,6 +448,292 @@ main {
 }
 
 
+.minutas{
+    background: #ff8145;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+    color: white;
+    height: 100px;
+
+}
+
+.secao-marmitas {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color:ff8145;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.marmita-bloco {
+    width: 100%;
+    height: 276px;
+    gap: 15px;
+
+    display: flex;
+}
+
+.marmita-imagem {
+    width: 50%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   COLOQUE SUAS IMAGENS AQUI
+   ========================= */
+
+.imagem-pp {
+    background-image: url("ma1.png");
+}
+
+.imagem-p {
+    background-image: url("ma2.png");
+}
+
+.imagem-m {
+    background-image: url("m3.png");
+    counter-reset: white;
+}
+
+
+
+
+
+/* Conteúdo laranja */
+
+.marmita-conteudo {
+    width: 50%;
+    height: 100%;
+
+    background-color: #f77e43;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.marmita-conteudo h2 {
+    margin: 0 0 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.marmita-conteudo strong {
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.marmita-conteudo span {
+    margin-top: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+
+/* =========================
+   SEGUNDO BLOCO
+   ========================= */
+
+   .marmita-bloco:nth-child(1) .marmita-imagem {
+    order: 1;
+}
+
+.marmita-bloco:nth-child(1) .marmita-conteudo {
+    order: 2;
+}
+
+
+.marmita-bloco:nth-child(2) .marmita-imagem {
+    order: 1;
+}
+
+.marmita-bloco:nth-child(2) .marmita-conteudo {
+    order: 2;
+}
+
+
+.marmita-bloco:nth-child(3) .marmita-imagem {
+    order: 1;
+}
+
+.marmita-bloco:nth-child(3) .marmita-conteudo {
+    order: 2;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* ==========================
+   FOOTER - DESKTOP
+   ========================== */
+
+   .footer-contato {
+    width: 100%;
+    min-height: 306px;
+    padding: 25px 8%;
+    box-sizing: border-box;
+
+    background-color: #151515;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Endereço */
+
+.footer-endereco {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-endereco address {
+    width: 276px;
+    min-height: 108px;
+    padding: 25px 36px;
+    box-sizing: border-box;
+
+    background-color: #f9a653;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: #292929;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Formulário */
+
+.footer-formulario {
+    width: 50%;
+    max-width: 500px;
+}
+
+.footer-formulario h2 {
+    margin: 0 0 7px;
+
+    color: #f5f3e9;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-formulario h2 span {
+    color: #ff8246;
+}
+
+.footer-formulario form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Campos */
+
+.footer-formulario input,
+.footer-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    border-radius: 13px;
+
+    background-color: #d8d8d8;
+
+    padding: 8px 13px;
+
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.footer-formulario input {
+    height: 29px;
+}
+
+.footer-formulario textarea {
+    height: 68px;
+    resize: vertical;
+    min-height: 68px;
+}
+
+.footer-formulario input::placeholder,
+.footer-formulario textarea::placeholder {
+    color: #454545;
+    opacity: 1;
+}
+
+/* Botão */
+
+.footer-formulario button {
+    align-self: flex-end;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 7px 13px;
+
+    background-color: #f9a653;
+    color: #292929;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-style: italic;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-formulario button:hover {
+    background-color: #ff8246;
+}
+
+
+
+
+
+
+
 /* =========================
    RESPONSIVO
 ========================= */
@@ -494,6 +786,13 @@ main {
 
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagens-marmitas{
+    width:45%;
+    height:450px;
 }
 
 
@@ -612,6 +911,8 @@ main {
         left: calc(50% + 145px);
         bottom: 15px;
     }
+
+    
 }
 
 
@@ -624,6 +925,7 @@ main {
     .marmitas-section {
         height: 340px;
     }
+  
 
     .marmita-principal {
         width: 430px;
@@ -670,6 +972,8 @@ main {
         max-width: 700px;
     }
 
+    
+
 }
 
 
@@ -684,6 +988,8 @@ main {
         max-width: none;
         margin-left: -10%;
     }
+
+   
 
 }
 
@@ -717,6 +1023,8 @@ main {
     .logo {
         order: 2;
     }
+
+    
 
     .menu-left {
         order: 1;
@@ -775,10 +1083,16 @@ main {
         order: -1;
     }
 
-    .banner {
-        height: 400px;
+    .logo-img { 
+        width: 45%;
+        position: relative;
+        top: -12px;
+      
+    }
 
+    .banner {
         flex-direction: column;
+        height: 200px;
     }
 
     .banner-left,
@@ -812,4 +1126,126 @@ main {
     .pedido-info {
         min-height: 80px;
     }
+
+    .minutas{
+        background: #ff8145;
+        display: flex; 
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        color: white;
+        height: 200px;
+        text-align: center
+    
+    }
+
+    .minutas h1{
+        font-size: 25px;
+    }
+
+
+
+    /* imagens das marmitas section */
+
+    .secao-marmitas {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+
+    .marmita-bloco {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marmita-imagem,
+    .marmita-conteudo {
+        width: 100%;
+    }
+
+    .marmita-imagem {
+        height: 220px;
+    }
+
+    .marmita-conteudo {
+        min-height: 180px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .marmita-conteudo h2 {
+        font-size: 24px;
+    }
+
+    .marmita-conteudo strong {
+        font-size: 25px;
+    }
+
+    .marmita-conteudo span {
+        font-size: 18px;
+    }
+
+    /* No segundo bloco, imagem também fica abaixo do texto */
+    .marmita-bloco:nth-child(2) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+
+        .footer-contato {
+            min-height: auto;
+            padding: 35px 20px;
+    
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+        }
+    
+        .footer-endereco {
+            width: 100%;
+        }
+    
+        .footer-endereco address {
+            width: 100%;
+            max-width: 320px;
+            min-height: 100px;
+    
+            padding: 25px;
+            font-size: 13px;
+        }
+    
+        .footer-formulario {
+            width: 100%;
+            max-width: 400px;
+        }
+    
+        .footer-formulario h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+    
+        .footer-formulario form {
+            gap: 14px;
+        }
+    
+        .footer-formulario input {
+            height: 38px;
+            font-size: 12px;
+        }
+    
+        .footer-formulario textarea {
+            height: 100px;
+            min-height: 100px;
+            font-size: 12px;
+        }
+    
+        .footer-formulario button {
+            padding: 10px 16px;
+            font-size: 12px;
+        }
+    
+    }
+  
 }
